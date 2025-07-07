@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,13 +14,14 @@ class ApplicationTest {
     private final static Logger log = LoggerFactory.getLogger(ApplicationTest.class);
 
     @Test
-    public void givenNonExistentFilePath_whenOpeningFile_thenNullPointerExceptionOccurred() throws IOException {
-        log.info("ApplicationTest#givenNonExistentFilePath_whenAttemptOpeningFile_thenNullPointerExceptionOccurred");
+    public void givenNonExistentFilePath_whenOpeningFile_thenNullPointerExceptionOccurred() {
+        log.info("ApplicationTest#givenNonExistentFilePath_whenOpeningFile_thenNullPointerExceptionOccurred");
         assertThrows(NullPointerException.class, () -> FileUtil.openFileExceptionHandling("/non-existent-path/non-existent-file.txt"));
     }
 
     @Test
     public void givenNonExistentFileName_whenOpeningFileSuppressedExceptionHandling_thenSuppressedExceptionAvailable() {
+        log.info("ApplicationTest#givenNonExistentFileName_whenOpeningFileSuppressedExceptionHandling_thenSuppressedExceptionAvailable");
         try {
             FileUtil.openFileSuppressedExceptionHandling("/non-existent-path/non-existent-file.txt");
         } catch (Exception e) {
@@ -35,6 +35,7 @@ class ApplicationTest {
 
     @Test
     public void whenUsingAutoCloseableResource_thenSuppressedExceptionAvailable() {
+        log.info("ApplicationTest#whenUsingAutoCloseableResource_thenSuppressedExceptionAvailable");
         try (var resource = new AutoCloseableResource()) {
             resource.process();
         } catch (Exception e) {
