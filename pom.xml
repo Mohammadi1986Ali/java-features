@@ -13,6 +13,7 @@
         <module>runnable-callable</module>
         <module>downcast-upcast</module>
         <module>exception-handling</module>
+        <module>record</module>
     </modules>
 
     <properties>
