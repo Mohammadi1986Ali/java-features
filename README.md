@@ -1,8 +1,8 @@
 ## Java-Features Project
 ### Modules
-- Pojo vs Bean
-- Runnable vs Callable
-- Downcast vs Upcast
-- Exception Handling
-- Record
-- Void Type
+- pojo-bean
+- runnable-callable
+- downcast-upcast
+- exception-handling
+- record
+- void-type
