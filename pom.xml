@@ -15,6 +15,7 @@
         <module>exception-handling</module>
         <module>record</module>
         <module>void-type</module>
+        <module>generic</module>
     </modules>
 
     <properties>

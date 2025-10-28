@@ -6,3 +6,4 @@
 - exception-handling
 - record
 - void-type
+- generic
