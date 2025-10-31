@@ -1,5 +1,5 @@
-## Java-Features Project
-### Modules
+## java-features
+### modules
 - pojo-bean
 - runnable-callable
 - downcast-upcast
