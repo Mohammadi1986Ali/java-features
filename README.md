@@ -1,9 +1,10 @@
 ## java-features
 ### modules
-- pojo-bean
-- runnable-callable
 - downcast-upcast
 - exception-handling
-- record
-- void-type
+- functional-interfaces
 - generic
+- pojo-bean
+- record
+- runnable-callable
+- void-type

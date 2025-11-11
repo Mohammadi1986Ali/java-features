@@ -8,6 +8,7 @@
     <artifactId>java-features</artifactId>
     <version>1.0.1</version>
     <packaging>pom</packaging>
+
     <modules>
         <module>pojo-bean</module>
         <module>runnable-callable</module>
@@ -16,6 +17,7 @@
         <module>record</module>
         <module>void-type</module>
         <module>generic</module>
+        <module>functional-interfaces</module>
     </modules>
 
     <properties>

@@ -21,7 +21,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.ai4everyone.tutorial" level="INFO" additivity="false">
+    <logger name="com.ai4everyone.tutorial" level="INFO">
         <appender-ref ref="CONTAINER"/>
     </logger>
 
