@@ -14,11 +14,5 @@
 
     <build>
         <finalName>downcast-upcast-${project.version}</finalName>
-        <resources>
-            <resource>
-                <filtering>true</filtering>
-                <directory>src/main/resources</directory>
-            </resource>
-        </resources>
     </build>
 </project>
